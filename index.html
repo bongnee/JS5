@@ -23,6 +23,56 @@
             <p id="txtTien" class="alert alert-danger"></p>
 
           </form>
+
+          <h2>QUẢN LÝ TUYỂN SINH</h2>
+          <form>
+            <div class="form-group">
+              <label for="diemChuan">Điểm chuẩn</label>
+              <input type="number" class="form-control" id="diemChuan" >
+            </div>
+            <div class="form-group">
+              <label for="diem1">Điểm 1</label>
+              <input type="number" class="form-control" id="diem1">
+            </div>
+            <div class="form-group">
+              <label for="diem2">Điểm 2</label>
+              <input type="number" class="form-control" id="diem2">
+            </div>
+            <div class="form-group">
+              <label for="diem3">Điểm 3</label>
+              <input type="number" class="form-control" id="diem3">
+            </div>
+
+            <div class="form-group">
+              <label for="khuVuc">Khu vực</label>
+              <select class="form-control" id="khuVuc">
+                <option id="x">Chọn khu vực</option>
+                <option id="a">A</option>
+                <option id="b">B</option>
+                <option id="c">C</option>
+                
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="doiTuong">Đối tượng</label>
+              <select class="form-control" id="doiTuong">
+                <option id="dt_0">Chọn đối tượng</option>
+                <option id="dt_1">1</option>
+                <option id="dt_2">2</option>
+                <option id="dt_3">3</option>
+                
+              </select>
+            </div>
+            
+            <button type="button" class="btn btn-primary" id="btnDiem">Tính điểm</button>
+            <p id="txtDiem" class="alert alert-danger"></p>
+
+          </form>
+
+
+
+
         </div>
     </div>
     
@@ -32,5 +82,6 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 <script src="./js/main.js"></script>
+<script src="./js/tinhdiem.js"></script>
 </body>
 </html>
