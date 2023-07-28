@@ -17,6 +17,7 @@ function tinhTienCap() {
     case "Doanh nghiệp":
         tien = tinhTienDoanhNghiep(soKetNoi,soKenh)
     break;
+    
    }
    document.getElementById("txtTienCap").innerHTML ="mã khách hàng:"+ maKhachHang +"<br> loại khách hàng:" + loaiMucGia + "<br> tiền cáp:"+ tien.toLocaleString() + "$";
 }
@@ -32,7 +33,7 @@ function kiemTraMucGia(radio1, radio2) {
     }else if (radio2.checked) {
         loaiMucGia = "Doanh nghiệp";
     }else{
-        alert("Hãy chọn loại mức giá");
+        alert("Hãy chọn loại khách hàng");
     }
     return loaiMucGia;
     
