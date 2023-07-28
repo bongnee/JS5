@@ -29,9 +29,9 @@ function quanLyTuyenSinh() {
     
   
 
-    var loai = xepLoai();
+    var loai = xepLoai(diem1,diem2,diem3,diem,diemChuan);
 
-    document.getElementById("txtDiem").innerHTML = diem + xepLoai;
+    document.getElementById("txtDiem").innerHTML = diem +" "+ loai;
 }
 document.getElementById("btnDiem").onclick = quanLyTuyenSinh;
 
@@ -65,13 +65,14 @@ function chonDoiTuong(option5, option6, option7, option8) {
     
     
 }
-function xepLoai() {
+function xepLoai(diem1,diem2,diem3,diem,diemChuan) {
     var loai ="";
-    if (diem1 = 0 || diem2 = 0|| diem3 = 0 || diem < diemchuan) {
-        loai = "rớt";
+    if(diem >= diemChuan && diem1 > 0 && diem2 > 0 && diem3 > 0){
+        loai= "đậu";
     }else{
-        loai = "đậu";
+        loai = "rớt";
     }
+        
     return loai;
 
 }
